@@ -271,10 +271,8 @@ services:
       - ./data/certbot/certs/:/var/certs
       - ./certbot/letsencrypt/:/var/www/letsencrypt
     environment:
-      - CN=admi.test,www.admi.test
+      - CN=www.admiapp.com,admiapp.com
       - EMAIL=cesarago852@gmail.com
-    depends_on:
-      - nginx
     networks:
       - frontend
 
